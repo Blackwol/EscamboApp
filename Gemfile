@@ -19,6 +19,7 @@ gem 'paperclip', '~> 5.0.0'
 gem 'redcarpet'
 # Gem Faker
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+gem 'doctor_ipsum'
 gem 'friendly_id'
 # Money with Rails
 gem 'money-rails'
@@ -68,7 +69,6 @@ group :development, :test do
   gem 'rails-erd'
   # Better error page for Rack apps
   gem 'better_errors'
-  gem 'doctor_ipsum'
 end
 
 group :development do

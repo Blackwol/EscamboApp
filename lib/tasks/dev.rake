@@ -6,7 +6,9 @@ namespace :dev do
 
 		puts "Executando o setup para desenvolvimento..."
 		%x(rake db:drop)
+		if Rails.env.development?
 		%x(rm -rf #{images_path})
+		end
 		%x(rake db:create)
 		%x(rake db:migrate)
 		%x(rake db:seed)
