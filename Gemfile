@@ -19,6 +19,7 @@ gem 'paperclip', '~> 5.0.0'
 gem 'redcarpet'
 # Gem Faker
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+gem 'friendly_id'
 # Money with Rails
 gem 'money-rails'
 gem 'kaminari'
