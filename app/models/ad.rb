@@ -21,7 +21,7 @@ class Ad < ActiveRecord::Base
   scope :by_category, ->(id, page) {where(category: id).page(page).per(QTT_PAGE)}
   scope :search, ->(q, page) {where("title LIKE ?", "%#{q}%").page(page).per(QTT_PAGE)}
   scope :random, ->(quantity) {
-    Rails.env.production?
+    if Rails.env.production?
       limit(quantity).order("RAND()") # MySQL
     else
       limit(quantity).order("RANDOM()") #SQLite
