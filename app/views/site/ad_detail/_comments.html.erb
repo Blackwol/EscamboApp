@@ -1,12 +1,7 @@
 <% @ad.comments.each do |comment| %>
     <hr>
     <div class="row">
-        <div class="col-md-12">
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
+        <div class="col-md-12"> 
             <%= comment.member.email %>
             <span class="pull-right"><%= time_ago_in_words(comment.created_at)%></span>
             <p><%=comment.body%></p>

@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+ # CONFIG PRA ENVIAR EMAIL
+ # config.action_mailer.default_url_options = {host: 'escamboapp.com.br'}
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 

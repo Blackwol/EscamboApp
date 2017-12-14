@@ -90,5 +90,6 @@ group :production do
   #mySQL adapter
   gem 'mysql2', '~> 0.3.18'
   gem 'unicorn'
+  gem 'mailgun-ruby', '~>1.1.4'
 end
 
